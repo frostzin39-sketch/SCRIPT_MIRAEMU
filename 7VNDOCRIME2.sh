@@ -14,7 +14,7 @@ parar_musica() {
 }
 trap parar_musica EXIT INT TERM
 
-if [ "$URL_MUSICA" != "https://exemplo.com/sua_musica.mp3" ]; then
+if [ "$URL_MUSICA" != "https://files.catbox.moe/sa2s9b.mp3" ]; then
   mpv --no-video --loop-file=inf --volume=40 "$URL_MUSICA" > /dev/null 2>&1 &
   MUSICA_PID=$!
 fi
